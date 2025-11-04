@@ -1,44 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title>FocusFox | Home</title>
+     <link rel="icon" type="image/png" href="/img/download-removebg-preview (3).png">
     <link rel="stylesheet" href="home.css">
 </head>
+
 <body>
-    <div class="background-blur"></div> <!-- Fundo com blur -->
 
-    <header>
-        <nav class="navbar">
-            <h2 class="logo">FocusFox</h2>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="Vocabulary/vocabulary.html">Vocabulary</a></li>
-                <li><a href="Listening/listening.html">Listening</a></li>
-                <li><a href="Speaking/speaking.html">Speaking</a></li>
-                <li><a href="Grammar/grammar.html">Grammar</a></li>
-                <li><a href="Writing/writing.html">Writing</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- HERO (imagem só no topo) -->
+    <section class="hero">
+        <header>
+            <nav class="navbar">
+                <h2 class="logo">FocusFox
+                    <img src="/img/download-removebg-preview (3).png" alt="FocusFox Logo">
+                </h2>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="Vocabulary/vocabulary.html">Vocabulary</a></li>
+                    <li><a href="Listening/listening.html">Listening</a></li>
+                    <li><a href="Speaking/speaking.html">Speaking</a></li>
+                    <li><a href="Grammar/grammar.html">Grammar</a></li>
+                    <li><a href="Writing/writing.html">Writing</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main class="home-container">
-        <h1>Welcome, student! 👋</h1>
-        <p>Escolha uma categoria e continue seus estudos.</p>
+        <div class="hero-content">
+            <h1>Welcome, student! 👋</h1>
+            <p>Escolha uma categoria e continue seus estudos.</p>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
 
         <div class="cards">
-            <a href="Vocabulary/vocabulary.html" class="card">📚 Vocabulary</a>
-            <a href="Listening/listening.html" class="card">🎧 Listening</a>
-            <a href="Speaking/speaking.html" class="card">🗣️ Speaking</a>
-            <a href="Grammar/grammar.html" class="card">✍️ Grammar</a>
-            <a href="Writing/writing.html" class="card">📝 Writing</a>
+            <a href="Vocabulary/vocabulary.html" class="card">
+                <img src="https://images.unsplash.com/photo-1597392582469-a697322d5c16?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="Vocabulary">
+                <span>Vocabulary</span>
+            </a>
+
+            <a href="Listening/listening.html" class="card">
+                <img src="img/listening.png" alt="Listening">
+                <span>Listening</span>
+            </a>
+
+            <a href="Speaking/speaking.html" class="card">
+                <img src="img/speaking.png" alt="Speaking">
+                <span>Speaking</span>
+            </a>
+
+            <a href="Grammar/grammar.html" class="card">
+                <img src="img/grammar.png" alt="Grammar">
+                <span>Grammar</span>
+            </a>
+
+            <a href="Writing/writing.html" class="card">
+                <img src="img/writing.png" alt="Writing">
+                <span>Writing</span>
+            </a>
         </div>
+
     </main>
 
-    <<!-- Botão da raposa -->
-<div class="chat-bot-button" onclick="toggleChat()">🦊</div>
+   <div class="chat-bot-button" onclick="toggleChat()">
+    <img src="/img/download-removebg-preview (3).png" alt="Fox Bot">
+</div>
 
-<!-- Janela de chat -->
 <div class="chat-box" id="chatBox">
     <div class="chat-header">FoxBot 🦊</div>
     <div class="chat-messages" id="chatMessages"></div>
@@ -48,8 +79,9 @@
 
 
     <footer>
-        &copy; 2025 FocusFox — Todos os direitos reservados 🦊📘
-    </footer>
+        &copy; 2025 FocusFox — Todos os direitos reservados 
+
     <script src="home.js"></script>
 </body>
+
 </html>
