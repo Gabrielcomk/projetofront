@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FocusFox | Home</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" th:href="@{/img/download.png}">
+
+    <!-- CSS -->
+    <link rel="stylesheet" th:href="@{/css/home.css}">
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">FocusFox
+                <img th:src="@{/img/download.png}" alt="FocusFox Logo">
+            </h2>
+            <ul>
+                <li><a th:href="@{/}">Início</a></li>
+                <li><a th:href="@{/vocabulary}">Vocabulary</a></li>
+                <li><a th:href="@{/listening}">Listening</a></li>
+                <li><a th:href="@{/speaking}">Speaking</a></li>
+                <li><a th:href="@{/grammar}">Grammar</a></li>
+                <li><a th:href="@{/writing}">Writing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero-content">
+        <h1>Welcome, student! 👋</h1>
+        <p>Escolha uma categoria e continue seus estudos.</p>
+    </div>
+</section>
+
+<!-- CARDS -->
+<main>
+    <div class="cards">
+
+        <a th:href="@{/vocabulary}" class="card">
+            <img th:src="@{/img/vocabulary.png}" alt="Vocabulary">
+            <span>Vocabulary</span>
+        </a>
+
+        <a th:href="@{/listening}" class="card">
+            <img th:src="@{/img/listening.png}" alt="Listening">
+            <span>Listening</span>
+        </a>
+
+        <a th:href="@{/speaking}" class="card">
+            <img th:src="@{/img/speaking.png}" alt="Speaking">
+            <span>Speaking</span>
+        </a>
+
+        <a th:href="@{/grammar}" class="card">
+            <img th:src="@{/img/grammar.png}" alt="Grammar">
+            <span>Grammar</span>
+        </a>
+
+        <a th:href="@{/writing}" class="card">
+            <img th:src="@{/img/writing.png}" alt="Writing">
+            <span>Writing</span>
+        </a>
+
+    </div>
+</main>
+
+<!-- BOT RAPOSA -->
+<div class="chat-bot-button" onclick="toggleChat()">
+    <img th:src="@{/img/download.png}" alt="Fox Bot">
+</div>
+
+<div class="chat-box" id="chatBox">
+    <div class="chat-header">FoxBot 🦊</div>
+    <div class="chat-messages" id="chatMessages"></div>
+    <textarea id="userMsg" placeholder="Digite algo..."></textarea>
+    <button onclick="sendMessage()">Enviar</button>
+</div>
+
+<footer>
+    &copy; 2025 FocusFox — Todos os direitos reservados
+</footer>
+
+<!-- JS -->
+<script th:src="@{/js/home.js}"></script>
+
+</body>
+</html>
